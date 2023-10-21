@@ -76,7 +76,7 @@ class PersonalPresentation extends HTMLElement {
             </div>
         
             <div class="photo-container">
-                <img src="./assets/brenda.JPG"/>
+                <img src="./assets/brenda.jpg"/>
             </div>
         </section>`;
     }
