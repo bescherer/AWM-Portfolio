@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenda Emanuelle Scherer</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="components/presentation.js" type="text/javascript" defer></script>
+    <script src="components/header-menu.js" type="text/javascript" defer></script>
+    <script src="validate-form.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+
+    <!-- Header component -->
+    <header-menu></header-menu>
+
+    <!-- Personal presentation component -->
+    <personal-presentation></personal-presentation>
+
+    <!-- Portfolio content -->
+    <section class="section" id="about">
+        <h1>sobre mim</h1>
+        <div class="icon">
+            <img src="assets/icons/about-icon.svg" alt="loyalte-icon" style="color: red;" class="section-icon">
+        </div>
+        <div class="section-resume">
+            <p>
+                Olá, meu nome é Brenda Emanuelle Scherer, tenho 22 anos, 2 gatos e trabalho na área de desenvolvimento
+                de software há cerca de 3 anos. Atualmente curso Engenharia de Software na Uninter, entretanto, também
+                estou matriculada no curso de Ciência da Computação da Universidade Federal de Santa Maria (UFSM), onde
+                concluí os meus primeiros quatro semestres (atualmente a graduação encontra-se trancada por motivos
+                familiares). Entre minhas coisas preferidas, estão a leitura, principalmente de livros de ficção, a
+                música (apenas como ouvinte) e o ensino, onde no momento posso mentorar colegas que estão entrando na
+                área e auxiliar em suas dúvidas e desenvolvimento.
+            </p>
+        </div>
+    </section>
+
+    <section class="section white-section" id="school">
+        <h1>currículo</h1>
+        <div class="icon">
+            <img src="assets/icons/school-icon.svg" alt="loyalte-icon" style="color: red;" class="section-icon">
+        </div>
+        <div class="section-resume">
+            <ul>
+                <strong>Educação:</strong>
+                <li>Ciência da Computação - UFSM (2019 - pausado)</li>
+                <li>Engenharia de Software - Uninter (2023 - presente)</li>
+            </ul>
+            <br>
+            <ul>
+                <strong>Carreira:</strong>
+                <li>Drakkar Solos - Desenvolvedora Front-end</li>
+                <li>MK Solutions - Desenvolvedora Mobile</li>
+                <li>Imply - Desenvolvedora Mobile e Front-end</li>
+                <li>Nexti - Desenvolvedora Fullstack (Mobile, Front-end e Back-end)</li>
+            </ul>
+            <br>
+            <ul>
+                <strong>Nesses três anos em que trabalho com desenvolvimento, meu foco maior acabou sendo front-end e
+                    mobile,
+                    entretanto, no momento me identifico como fullstack, atuando também no back-end. Se tratando de
+                    tecnologias, possuo conhecimento principalmente em:
+                </strong>
+                <li>React</li>
+                <li>Typescript</li>
+                <li>Javascript</li>
+                <li>Vue</li>
+                <li>AngularJS</li>
+                <li>React Native</li>
+                <li>Swift</li>
+                <li>NodeJS</li>
+                <li>Java</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="portfolio">
+        <h1>portfólio</h1>
+        <div class="icon">
+            <img src="assets/icons/book-icon.svg" alt="loyalte-icon" style="color: red;" class="section-icon">
+        </div>
+        <div class="section-resume">
+            <p>
+                Trabalhando fulltime em empresas de alto padrão, como por exemplo, onde se atendem os maiores clubes
+                futebolísticos
+                do país, empresas com mais de 400 mil usuários diários, sistemas que precisam estar up 24/7, IoT,
+                comunicação em tempo real via sockets,
+                e sendo universitária, no momento não consigo desenvolver tantos projetos pessoais
+                quanto gostaria, entretanto, acessando as mídias das empresas onde pude colaborar, as mesmas
+                compartilham projetos dos quais orgulhosamente fiz parte! Dessa forma, compartilho o link do meu <a
+                    target="_blank" href="https://www.linkedin.com/in/brenda-emanuelle-scherer-7934991b5">Linkedin</a>
+                para maiores informações.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="section white-section" id="form">
+        <h1>contate-me</h1>
+        <div class="icon">
+            <img src="assets/icons/send-icon.svg" alt="loyalte-icon" style="color: red;" class="section-icon">
+        </div>
+        <div class="section-resume">
+            <form onsubmit="return validateForm()">
+                <input type="text" id="name" class="form-control" placeholder="Nome">
+                <input type="email" id="email" class="form-control" placeholder="E-mail">
+                <input type="text" id="number" class="form-control" placeholder="Número" onkeyup="applyMask(event)"
+                    maxlength="15">
+                <textarea class="form-control" id="message" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                <button type="submit" class="send-form">Enviar via Whatsapp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-resume">
+            Portfólio pessoal com finalidade acadêmica.
+        </div>
+        <div class="footer-resume">
+            Criado por Brenda Emanuelle Scherer, em outubro de 2023.
+        </div>
+    </div>
+
+</body>
+
+</html>
